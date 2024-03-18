@@ -26,9 +26,10 @@ header{
 nav{
     background-color: var(--vert);
     grid-area: nav;
+    flex-direction: row-reverse;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-around;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     padding: 32px;
