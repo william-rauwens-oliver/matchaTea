@@ -23,6 +23,8 @@ header {
     grid-area: h;
     display: flex;
     justify-content: center;
+    font-family: 'Satisfy', sans-serif;
+    color: white;
 }
 
 nav {
