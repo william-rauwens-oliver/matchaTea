@@ -114,3 +114,10 @@ footer>section:nth-child(2)>p {
 section>h3{
     margin-top: 32px;
 }
+
+.aventure {
+    padding-top: 50px;
+    color: black;
+    text-align: center;
+    font-family: "Lunasima", sans-serif;
+}
