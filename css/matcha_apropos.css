@@ -14,16 +14,22 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Crée trois colonnes égales */
     gap: 20px; /* Espace entre les éléments */
-  }
+}
   
-  .membre {
+.membre {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centrer horizontalement */
     color: black;
-  }
-  
-  .membre p {
+}
+
+.membre p {
     margin-top: 10px; /* Espacement entre le prénom et l'image */
-  }
+}
   
+.description_equipe {
+    padding-top: 150px;
+    color: black;
+    font-family: "Lunasima", sans-serif;
+    text-align: center;
+}
