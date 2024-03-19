@@ -11,26 +11,21 @@ body {
     display: grid;
     grid-template-columns:200px auto;
     grid-template-rows: 88px auto 300px;
-    grid-template-areas: 
-    "h h"
-    "nav m"
-    "nav f"
-    ;
+    grid-template-areas: "h h" "nav m" "nav f";
 }
 
 header {
     background-color: var(--marron);
     grid-area: h;
-      
 }
 
 h1 {
- 
    color: var(--claire);
    font-family: "Satisfy", cursive;
    font-size: 62px;  
    text-align: center;
-   margin-top: 7px; 
+   margin-top: 7px;
+   padding-left: 150px; 
 }
 
 nav {
