@@ -1,0 +1,43 @@
+:root{
+    --vert : #86B17B;
+    --marron : #BB8F69;
+    --foncé : #30412B;
+    --claire : #FFFFFF;
+}
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.input {
+	display: flex;
+	flex-direction: column-reverse;
+	padding-top: 20px;
+}
+
+.input-label {
+	color: var(--foncé);
+	text-align: center;
+}
+
+.input-field {
+	border: 0;
+	background-color: transparent;
+	border-bottom: 2px solid #BB8F69; 
+	font: inherit;
+	padding: 8px 16px;
+    outline: 0;
+	text-align: center;
+}
+form{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 32px;
+}
+section{
+	text-align: center;
+}
+section>img{
+	margin-bottom: 32px;
+}
