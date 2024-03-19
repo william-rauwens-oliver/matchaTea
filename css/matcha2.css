@@ -10,7 +10,7 @@ body {
     font-family:  'Helvetica Neue', sans-serif;
     display: grid;
     grid-template-columns:200px auto;
-    grid-template-rows: 60px auto 300px;
+    grid-template-rows: 88px auto 300px;
     grid-template-areas: 
     "h h"
     "nav m"
@@ -21,10 +21,16 @@ body {
 header {
     background-color: var(--marron);
     grid-area: h;
-    display: flex;
-    justify-content: center;
-    font-family: 'Satisfy', sans-serif;
-    color: white;
+      
+}
+
+h1 {
+ 
+   color: var(--claire);
+   font-family: "Satisfy", cursive;
+   font-size: 62px;  
+   text-align: center;
+   margin-top: 7px; 
 }
 
 nav {
@@ -51,16 +57,23 @@ footer {
 main {
     color:var(--claire);
     grid-area: m;
-    background-image: url(/img/fond.jpg);
+    background-image: url(assets/img/fond.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
+h2 {
+    color: var(--foncé);
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    margin-top: 450px; 
+}
+
 .logo {
     position: absolute;
-    top: 5px;
-    left: 20px;
+    top: 20px;
+    left: 30px;
 }
 
 .cadre {
@@ -103,6 +116,6 @@ footer>section:nth-child(2)>p {
     text-align: center;
 }
 
-section>h3 {
+section>h3{
     margin-top: 32px;
 }
