@@ -4,32 +4,32 @@
     --foncé : #30412B;
     --claire : #FFFFFF;
 }
+
 body{
     margin: 0px;
-    font-family:  'Helvetica Neue', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     display: grid;
-    grid-template-columns:200px auto;
-    grid-template-rows: 88px auto 300px;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 88px auto min-content;
     grid-template-areas: 
     "h h"
     "nav m"
     "nav f"
     ;
 }
+
 header{
     background-color: var(--marron);
-    grid-area: h;
-      
-}
-h1{
- 
-   color: var(--claire);
-   font-family: "Satisfy", cursive;
-   font-size: 62px;  
-   text-align: center;
-   margin-top: 7px; 
+    grid-area: h;  
 }
 
+h1{
+    color: var(--claire);
+    font-family: "Satisfy", cursive;
+    font-size: 62px;  
+    text-align: center;
+    margin-top: 7px; 
+}
 
 nav{
     background-color: var(--vert);
@@ -37,27 +37,31 @@ nav{
     flex-direction: row-reverse;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     padding: 32px;
     font-size: 28px;
 }
+
 footer{
     background-color: var(--foncé);
     grid-area: f;
     display: flex;
     justify-content: space-around;
     color: var(--vert);
+    align-self: end;
 }
+
 main{
-    color:var(--claire);
+    color: var(--claire);
     grid-area: m;
     background-image: url(assets/img/fond.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
+
 h2 {
     color: var(--foncé);
     font-family: 'Helvetica Neue', sans-serif;
@@ -65,21 +69,21 @@ h2 {
     margin-top: 450px; 
 }
 
-
 .logo{
     position: absolute;
     top: 28px;
     left: 30px;
 }
+
 .cadre{
     display: flex;
     flex-direction: column;
-    padding: 30px 80px  50px 80px;
+    padding: 30px 80px 50px 80px;
     margin-top: 32px;
     background-color: var(--vert);
     color: var(--foncé);
-
 }
+
 .cadre>a{
     text-align: center;
     border-color: var(--foncé);
@@ -88,23 +92,44 @@ h2 {
     color: var(--claire);
     padding: 10px;
 }
+
 a{
     text-decoration: none;
     color: var(--claire);
 }
+
 .navigation{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
 }
+
 .navigation>a{
     color: var(--vert);
 }
+
 footer>section:nth-child(2)>p{
     margin-top: 40px;
     text-align: center;
 }
+
 section>h3{
     margin-top: 32px;
+}
+
+.mosaique {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.produit {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.produit img {
+    max-width: 100%;
+    height: auto;
 }

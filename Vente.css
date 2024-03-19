@@ -6,3 +6,24 @@
     height: 100vh;
     background-color: #f5f5f5;
 }
+
+.tile:nth-child(1){
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.tile:nth-child(2){
+    grid-column: span 2;
+}
+
+.tile:nth-child(3){
+    grid-column: span 2;
+}
+
+.tile:nth-child(4){
+    grid-column: span 3;
+}
+
+.tile:nth-child(5){
+    grid-column: span 3;
+}
