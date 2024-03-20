@@ -1,9 +1,11 @@
+/* Réinitialisation des styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Variables de couleur */
 :root {
     --vert: #86B17B;
     --marron: #BB8F69;
@@ -15,6 +17,7 @@
     --vert-clair: #B4E0B5;
 }
 
+/* Styles pour le corps de la page */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     display: grid;
@@ -27,6 +30,7 @@ body {
     background-color: #f3f3f3;
 }
 
+/* Styles pour l'en-tête */
 header {
     background-color: var(--marron);
     grid-area: header;
@@ -34,6 +38,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -47,6 +52,7 @@ h1 {
     font-size: 36px;
 }
 
+/* Styles pour la navigation */
 nav {
     background-color: var(--vert);
     grid-area: nav;
@@ -64,6 +70,7 @@ nav a {
     font-size: 20px;
 }
 
+/* Styles pour le contenu principal */
 main {
     grid-area: main;
     padding: 20px;
@@ -78,13 +85,21 @@ h1 {
     font-size: 48px;
 }
 
+/* Styles pour les commandes */
 .commande {
-    border: 1px solid var(--foncé);
-    padding: 20px;
-    margin-bottom: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.commande:hover {
+    transform: translateY(-5px);
 }
 
 .commande-details {
@@ -104,6 +119,7 @@ h1 {
     color: var(--foncé);
 }
 
+/* Styles pour la barre de progression */
 .progress-bar {
     width: 100%;
     height: 10px;
@@ -115,41 +131,37 @@ h1 {
 
 .progress-status {
     height: 100%;
-    width: 100%;
     background-color: var(--gris);
-    transition: width 0.3s ease-in-out; 
     border-radius: 5px;
+    transition: width 0.3s ease-in-out;
 }
 
-.commande-expedie {
+/* Styles pour les états de livraison */
+.commande-expedie .progress-status {
     background-color: var(--bleu);
-    color: #fff;
 }
 
-.commande-preparation {
+.commande-preparation .progress-status {
     background-color: var(--orange);
-    color: #fff;
 }
 
-.commande-transit {
+.commande-transit .progress-status {
     background-color: var(--vert-clair);
 }
 
-.commande-agence {
+.commande-agence .progress-status {
     background-color: var(--vert);
-    color: #fff;
 }
 
-.commande-livraison {
+.commande-livraison .progress-status {
     background-color: var(--marron);
-    color: #fff;
 }
 
-.commande-livre {
+.commande-livre .progress-status {
     background-color: var(--vert);
-    color: #fff;
 }
 
+/* Styles pour le pied de page */
 footer {
     background-color: var(--foncé);
     grid-area: footer;
@@ -158,6 +170,7 @@ footer {
     align-items: center;
     padding: 20px;
     color: var(--vert);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer section {
