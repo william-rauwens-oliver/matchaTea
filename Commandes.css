@@ -117,7 +117,7 @@ h1 {
     height: 100%;
     width: 100%;
     background-color: var(--gris);
-    transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out; 
     border-radius: 5px;
 }
 
@@ -129,4 +129,47 @@ h1 {
 .commande-preparation {
     background-color: var(--orange);
     color: #fff;
+}
+
+.commande-transit {
+    background-color: var(--vert-clair);
+}
+
+.commande-agence {
+    background-color: var(--vert);
+    color: #fff;
+}
+
+.commande-livraison {
+    background-color: var(--marron);
+    color: #fff;
+}
+
+.commande-livre {
+    background-color: var(--vert);
+    color: #fff;
+}
+
+footer {
+    background-color: var(--foncé);
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: var(--vert);
+}
+
+footer section {
+    margin-right: 40px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.navigation a {
+    display: block;
+    margin-bottom: 10px;
 }
