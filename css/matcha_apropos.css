@@ -1,5 +1,5 @@
 main {
-    margin-bottom: 780px;
+    margin-bottom: 100px;
 }
 
 .notre_equipe {
@@ -28,8 +28,10 @@ main {
 }
   
 .description_equipe {
-    padding-top: 150px;
+    padding-top: 120px;
     color: black;
     font-family: "Lunasima", sans-serif;
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
