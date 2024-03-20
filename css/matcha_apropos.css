@@ -35,3 +35,39 @@ main {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+@media screen and (max-width: 901px) {
+    .membre img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .description_equipe p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 602px) {
+    .equipe {
+        grid-template-columns: auto; /* Mettre une seule colonne */
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .description_equipe p {
+        font-size: 10px;
+    }
+
+    .membre img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .membre p {
+        font-size: 10px;
+    }
+
+    .notre_equipe {
+        font-size: 20px;
+    }
+}
