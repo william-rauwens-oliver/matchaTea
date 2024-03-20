@@ -198,3 +198,5 @@ section > h3 {
 .produit:hover::after {
     content: "\2192";
 }
+
+/* change */
