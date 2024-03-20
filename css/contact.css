@@ -1,0 +1,19 @@
+.message_contact p {
+    color: black;
+    margin-left: 50px;
+    padding-top: 250px;
+    font-size: 24px;
+    font-family: 'Lunasima', sans-serif;
+}
+
+.formulaire_prenom {
+    color: black;
+}
+
+.formulaire_email {
+    color: black;
+}
+
+.formulaire_message {
+    color: black;
+}
