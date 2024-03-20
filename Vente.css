@@ -1,4 +1,3 @@
-/* Définition des variables */
 :root {
     --vert: #86B17B;
     --marron: #BB8F69;
@@ -7,7 +6,6 @@
     --highlight: #F2E3D0;
 }
 
-/* Styles généraux */
 body {
     margin: 0;
     font-family: 'Helvetica Neue', sans-serif;
@@ -162,11 +160,11 @@ section > h3 {
     background-color: #fff;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    overflow: hidden; /* Pour cacher le dépassement lors du zoom */
+    overflow: hidden;
 }
 
 .produit:hover {
-    transform: scale(1.05); /* Zoom de 5% sur le survol */
+    transform: scale(1.05);
 }
 
 .produit .prix {
