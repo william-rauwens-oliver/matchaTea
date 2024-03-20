@@ -104,3 +104,17 @@ main {
         padding-left: 50px;
     }
 }
+
+@media screen and (max-width: 1115px) {
+    .engagement {
+        padding-right: 80px;
+    }
+
+    .apropos {
+        padding-right: 80px;
+    }
+
+    .services {
+        padding-right: 80px;
+    }
+}
