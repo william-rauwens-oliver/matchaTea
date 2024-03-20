@@ -41,3 +41,7 @@ section{
 section>img{
 	margin-bottom: 32px;
 }
+.h-bouton{
+	border: solid 1px;
+	padding: 4px;
+}
