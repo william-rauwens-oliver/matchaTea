@@ -1,10 +1,13 @@
+/* Définition des variables */
 :root {
     --vert: #86B17B;
     --marron: #BB8F69;
     --foncé: #30412B;
     --claire: #000000;
+    --highlight: #F2E3D0;
 }
 
+/* Styles généraux */
 body {
     margin: 0;
     font-family: 'Helvetica Neue', sans-serif;
@@ -23,24 +26,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 header > img {
     width: 40px;
     height: 40px;
-    margin-left: 32px;
 }
 
 header > a {
-    margin-right: 32px;
+    margin-right: 20px;
 }
 
 h1 {
     color: var(--claire);
     font-family: "Satisfy", cursive;
-    font-size: 62px;
+    font-size: 48px;
     text-align: center;
     font-weight: lighter;
+    margin: 0;
 }
 
 nav {
@@ -52,8 +56,8 @@ nav {
     justify-content: space-around;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    padding: 32px;
-    font-size: 28px;
+    padding: 20px;
+    font-size: 24px;
 }
 
 footer {
@@ -63,6 +67,7 @@ footer {
     justify-content: space-around;
     color: var(--vert);
     align-self: end;
+    padding: 20px;
 }
 
 main {
@@ -73,31 +78,41 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 h2 {
     color: var(--foncé);
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 50px;
-    margin-top: 450px;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .cadre {
     display: flex;
     flex-direction: column;
-    padding: 30px 80px 50px 80px;
-    margin-top: 32px;
-    background-color: var(--vert);
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--highlight);
     color: var(--foncé);
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .cadre > a {
     text-align: center;
-    border-color: var(--foncé);
-    border-style: solid;
+    border: 2px solid var(--foncé);
     font-weight: bold;
-    color: var(--claire);
-    padding: 10px;
+    color: var(--marron);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cadre > a:hover {
+    background-color: var(--foncé);
+    color: var(--highlight);
 }
 
 a {
@@ -109,7 +124,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 }
 
 .navigation > a {
@@ -117,12 +132,12 @@ a {
 }
 
 footer > section:nth-child(2) > p {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
 }
 
 section > h3 {
-    margin-top: 32px;
+    margin-top: 20px;
 }
 
 .gallery {
@@ -133,8 +148,8 @@ section > h3 {
 
 .produit {
     position: relative;
-    width: 200px;
-    height: 300px;
+    width: 220px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,61 +157,54 @@ section > h3 {
     text-decoration: none;
     color: inherit;
     margin: 20px;
-    padding: 30px;
-    border: 1px solid var(--foncé);
-    border-radius: 10px;
-    overflow: hidden;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    overflow: hidden; /* Pour cacher le dépassement lors du zoom */
 }
 
 .produit:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Zoom de 5% sur le survol */
+}
+
+.produit .prix {
+    margin-top: auto;
+    color: var(--marron);
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .produit img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.produit::before,
-.produit::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    border-radius: 50%;
+.produit h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.avis {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    color: var(--foncé);
-    transition: background-color 0.3s ease;
+    margin-top: 5px;
 }
 
-.produit::before {
-    left: 0;
+.etoile {
+    color: gold;
+    font-size: 20px;
+    margin: 0 2px;
 }
 
-.produit::after {
-    right: 0;
+.produit[data-rating="1"] .etoile:nth-child(n+2),
+.produit[data-rating="2"] .etoile:nth-child(n+3),
+.produit[data-rating="3"] .etoile:nth-child(n+4),
+.produit[data-rating="4"] .etoile:nth-child(n+5),
+.produit[data-rating="5"] .etoile {
+    color: gold;
 }
-
-.produit:hover::before,
-.produit:hover::after {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-.produit:hover::before {
-    content: "\2190";
-}
-
-.produit:hover::after {
-    content: "\2192";
-}
-
-/* change */
