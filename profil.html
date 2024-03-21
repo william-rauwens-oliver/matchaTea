@@ -3,17 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/stylephone.css">
+    <link rel="stylesheet" href="css/profil.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/stylephone.css">
-    <title>Acceuil</title>
+    <title>Profil</title>
 </head>
-
 <body>
-
     <header>
         <div class="phone">
             <div class="navbar">
@@ -34,27 +33,32 @@
                 </div>
               </div>
         </div>
-        <a href=""><img class="logo" src="img/icon_the (1).png" alt=""></a>
+        <a href="index.html"><img class="logo" src="img/icon_the (1).png" alt=""></a>
         <h1>Matcha Tea</h1>
         <a href="profil.html"><img src="/img/cat.svg" alt=""></a>
     </header>
     <nav>
-        <a href="">Histoire</a>
-        <a href="">A propos</a>
-        <a href="">Vente</a>
-        <a href="">Contact</a>
+        <a href="">Commandes</a>
+        <a href=""><b>Profil</b></a>
     </nav>
     <main>
-        <div class="background">
-            <h2>
-                Plongez dans l'art du bien-être avec notre sélection exquise de matcha.
-            </h2>
-            <div>
-                <button class="button button4"><a href="">Découvrir</a></button>
-            </div>
-
-        </div>
-
+        <section>
+            <img src="img/Cat Profile.svg" alt="">
+            <form class="profil">
+                <div class="input">
+                    <input type="text" class="input-field" placeholder="Name" required />
+                    <label class="input-label">Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" class="input-field" placeholder="Email" required />
+                    <label class="input-label">Email address</label>
+                </div>
+                <div class="input">
+                    <input type="text" class="input-field" placeholder="Full address" required />
+                    <label class="input-label">Address</label>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <section>
@@ -62,7 +66,7 @@
                 Navigation
             </h3>
             <div class="navigation">
-                <a href="">Acceuil</a>
+                <a href="index.html">Acceuil</a>
                 <a href="">Histoire</a>
                 <a href="">A propos</a>
                 <a href="">Vente</a>
@@ -70,7 +74,7 @@
             </div>
 
         </section>
-        <section id="cadre">
+        <section>
             <div class="cadre">
                 <h3>Thanks for stopping by !</h3>
                 <a href="">Let's keep in touch</a>
@@ -91,5 +95,8 @@
                 Marseille
             </p>
         </section>
+
     </footer>
 </body>
+
+</html>
