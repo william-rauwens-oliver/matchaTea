@@ -1,3 +1,5 @@
+ 
+
 :root{
     --vert : #86B17B;
     --marron : #BB8F69;
@@ -24,7 +26,7 @@ header{
     align-items: center;
       
 }
-header>img{
+.logo{
     width: 40px;
     height: 40px;
     margin-left: 32px;
@@ -48,11 +50,31 @@ nav{
     flex-direction: row-reverse;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:end;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     padding: 32px;
     font-size: 28px;
+    gap: 130px;
+   
+}
+nav>a:first-child{
+    margin-bottom: 150px;
+}
+
+
+.button {
+    background-color: var(--foncé);
+    border: none;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 90px 120px;
+  }
+  .button4 {
+    border-radius: 9px;
 }
 footer{
     background-color: var(--foncé);
@@ -126,6 +148,8 @@ footer>section:nth-child(2)>p{
 section>h3{
     margin-top: 32px;
 }
+.phone{
+    display: none;
+}
 
-/*----PROFIL----*/
 
