@@ -1,42 +1,42 @@
+.aventure, .engagement, .apropos, .services {
+    color: black;
+    font-family: 'Lunasima', sans-serif;
+    text-align: center;
+}
+
 .aventure {
     padding-top: 50px;
-    color: black;
-    text-align: center;
     padding-bottom: 150px;
 }
 
-.engagement {
+.engagement, .apropos, .services {
     display: flex;
     justify-content: space-around;
-    color: black;
-    font-family: 'Lunasima' sans-serif;
+    align-items: center; /* Centrer verticalement */
     padding-bottom: 150px;
 }
 
-.engagement img {
+.engagement img, .apropos img, .services img {
     border-radius: 30px;
+    max-width: 100%; /* Ajuster la taille de l'image en mode responsive */
+    height: auto;
 }
 
-.apropos {
-    display: flex;
-    justify-content: space-around;
-    color: black;
-    font-family: 'Lunasima' sans-serif;
-    padding-bottom: 150px;
-}
+@media screen and (max-width: 1248px){
+    .apropos img {
+        width: 300px;
+        height: 226px;
+    }
+    .services img {
+        width: 300px;
+        height: 200px;
+    }
 
-.apropos img {
-    border-radius: 30px;
-}
+    .engagement, .services {
+        flex-direction: column;
+    }
 
-.services {
-    display: flex;
-    justify-content: space-around;
-    color: black;
-    font-family: 'Lunasima' sans-serif;
-    padding-bottom: 50px;
-}
-
-.services img {
-    border-radius: 30px;
+    .apropos {
+        flex-direction: column-reverse;
+    }
 }
