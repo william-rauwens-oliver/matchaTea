@@ -84,7 +84,6 @@ footer{
 main{
     color:var(--claire);
     grid-area: m;
-    min-height: 90vh;
 }
 .background{
     background-image: url(/img/fond.jpg);
