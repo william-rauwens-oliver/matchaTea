@@ -1,0 +1,75 @@
+:root {
+    --vert: #86B17B;
+    --marron: #BB8F69;
+    --foncé: #30412B;
+    --claire: #000000;
+    --highlight: #F2E3D0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.produit {
+    width: 220px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.produit:hover {
+    transform: scale(1.05);
+}
+
+.produit .prix {
+    margin-top: auto;
+    color: var(--marron);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.produit img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.produit h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.avis {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.etoile {
+    color: gold;
+    font-size: 20px;
+    margin: 0 2px;
+}
+
+.produit[data-rating="1"] .etoile:nth-child(n+2),
+.produit[data-rating="2"] .etoile:nth-child(n+3),
+.produit[data-rating="3"] .etoile:nth-child(n+4),
+.produit[data-rating="4"] .etoile:nth-child(n+5),
+.produit[data-rating="5"] .etoile {
+    color: gold;
+}
