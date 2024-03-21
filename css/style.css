@@ -10,7 +10,7 @@ body{
     margin: 0px;
     font-family:  'Helvetica Neue', sans-serif;
     display: grid;
-    grid-template-columns:1fr 8fr;
+    grid-template-columns:1fr 11fr;
     grid-template-rows: 87px auto 300px;
     grid-template-areas: 
     "h h"
