@@ -89,7 +89,7 @@ main{
     min-height: 90vh;
 }
 .background{
-    background-image: url(/img/fond.jpg);
+    background-image: url(/img/fond.png);
     height: auto;
     background-size: cover;
     margin: 0px;
