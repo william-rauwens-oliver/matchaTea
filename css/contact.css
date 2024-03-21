@@ -89,3 +89,19 @@ main {
     width: 150px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px){
+    .contact {
+        flex-direction: column;
+    }
+
+    .message_contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .contact p {
+        font-size: 20px;
+    }
+}
