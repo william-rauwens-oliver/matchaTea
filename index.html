@@ -8,15 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/stylephone.css">
     <title>Acceuil</title>
 </head>
 
 <body>
 
     <header>
-        <img class="logo" src="img/icon_the (1).png" alt="">
+        <div class="phone">
+            <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                    </div>  
+                  <div class="menu-items">
+                    <li><a href="#">Histoire</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">blogs</a></li>
+                    <li><a href="#">Vente</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <a href=""><img class="logo" src="img/icon_the (1).png" alt=""></a>
         <h1>Matcha Tea</h1>
-        <a href=""><img src="/img/Cat Profile.svg" alt=""></a>
+        <a href="profil.html"><img src="/img/cat.svg" alt=""></a>
     </header>
     <nav>
         <a href="">Histoire</a>
@@ -29,8 +49,12 @@
             <h2>
                 Plongez dans l'art du bien-être avec notre sélection exquise de matcha.
             </h2>
-            <a href="">Découvrir</a>
+            <div>
+                <button class="button button4"><a href="">Découvrir</a></button>
+            </div>
+
         </div>
+
     </main>
     <footer>
         <section>
@@ -46,7 +70,7 @@
             </div>
 
         </section>
-        <section>
+        <section id="cadre">
             <div class="cadre">
                 <h3>Thanks for stopping by !</h3>
                 <a href="">Let's keep in touch</a>
@@ -67,6 +91,5 @@
                 Marseille
             </p>
         </section>
-
     </footer>
 </body>
