@@ -1,0 +1,73 @@
+main {
+    margin-bottom: 100px;
+}
+
+.notre_equipe {
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    font-family: "Lunasima", sans-serif;
+    padding-bottom: 100px;
+}
+
+.equipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crée trois colonnes égales */
+    gap: 20px; /* Espace entre les éléments */
+}
+  
+.membre {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer horizontalement */
+    color: black;
+}
+
+.membre p {
+    margin-top: 10px; /* Espacement entre le prénom et l'image */
+}
+  
+.description_equipe {
+    padding-top: 120px;
+    color: black;
+    font-family: "Lunasima", sans-serif;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 901px) {
+    .membre img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .description_equipe p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 602px) {
+    .equipe {
+        grid-template-columns: auto; /* Mettre une seule colonne */
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .description_equipe p {
+        font-size: 10px;
+    }
+
+    .membre img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .membre p {
+        font-size: 10px;
+    }
+
+    .notre_equipe {
+        font-size: 20px;
+    }
+}
