@@ -1,6 +1,6 @@
  /* RESET NAVIGATEUR */
 
-:root{
+ :root{
     --vert : #86B17B;
     --marron : #BB8F69;
     --foncé : #30412B;
@@ -150,5 +150,3 @@ section>h3{
 .phone{
     display: none;
 }
-
-
