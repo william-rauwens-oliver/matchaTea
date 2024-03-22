@@ -1,5 +1,9 @@
-.article {
-    padding-top: 50px;
+main{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+article{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -14,7 +18,16 @@
     margin-left: 20px;
     font-size: 16px;
     color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
+.article-info>p{
+    max-width: 500px;
+    margin-bottom: 64px;
+}
+
 
 .article-info button {
     padding: 10px 20px;
@@ -31,9 +44,17 @@
     background-color: #689f38;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .article {
         flex-direction: column;
         width: 100%;
+        padding: 32px;
+    }
+    h3{
+        text-align: center;
+    }
+    .article-info>button{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
