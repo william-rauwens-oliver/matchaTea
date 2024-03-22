@@ -45,7 +45,7 @@ h1{
 .nav-container {
   display: block;
   position: relative;
-  height: 60px;
+  height: 0px;
 }
 
 .nav-container .checkbox {
@@ -131,4 +131,8 @@ h1{
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
+}
+.background{
+  background-image: url(../img/fondphone.jpg);
+
 }
