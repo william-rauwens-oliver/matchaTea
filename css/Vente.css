@@ -49,6 +49,7 @@
 }
 
 .produit h3 {
+    color:var(--foncé);
     font-size: 20px;
     margin: 0;
 }
