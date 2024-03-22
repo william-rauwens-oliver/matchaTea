@@ -62,7 +62,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--foncé);
+    color: white;
     font-size: 20px;
 }
 
@@ -73,11 +73,6 @@ main {
 
 .container {
     margin-bottom: 40px;
-}
-
-h1 {
-    margin-bottom: 20px;
-    font-size: 48px;
 }
 
 .commande {
