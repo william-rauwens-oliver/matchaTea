@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/stylephone.css">
-    <link rel="stylesheet" href="css/profil.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Milia Matcha</title>
+    <link rel="stylesheet" href="css/Article1.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/stylephone.css">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <title>Profil</title>
 </head>
 <body>
     <header>
@@ -24,52 +21,53 @@
                       <span class="line line3"></span>
                     </div>  
                   <div class="menu-items">
-                    <li><a href="Commandes.html">Commandes</a></li>
-                    <li><a href="profil.html">profil</a></li>
+                    <li><a href="histoire.html">Histoire</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a href="Vente.html">Vente</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                   </div>
                 </div>
               </div>
         </div>
         <a href="index.html"><img class="logo" src="img/icon_the (1).png" alt=""></a>
         <h1>Matcha Tea</h1>
-        <a href="profil.html"><img src="../matchaTea/img/cat.svg" alt=""></a>
+        <a href="profil.html"><img src="img/cat.svg" alt=""></a>
     </header>
     <nav>
-        <a href="Commandes.html">Commandes</a>
-        <a href="Commandes.html"><b>Profil</b></a>
+        <a href="histoire.html">Histoire</a>
+        <a href="apropos.html">A propos</a>
+        <a href="Vente.html">Vente</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <main>
-        <section>
-            <img src="img/Cat Profile.svg" alt="">
-            <form class="profil">
-                <div class="input">
-                    <input type="text" class="input-field" placeholder="Name" required />
-                    <label class="input-label">Name</label>
+    
+    <section class="article">
+        <div class="container">
+            <div class="article-content">
+                <div class="article-image">
+                    <img src="img/Capture d'écran 2024-03-18 154440.png" alt="Image de l'article">
                 </div>
-                <div class="input">
-                    <input type="text" class="input-field" placeholder="Email" required />
-                    <label class="input-label">Email address</label>
+                <div class="article-info">
+                    <h3>Macha Tea Vanille</h3>
+                    <p>
+                        Découvrez l'équilibre parfait entre la fraîcheur fruitée des baies rouges et la profondeur du thé matcha dans notre Macha Tea Fruit Rouge. Une explosion de saveurs exquises à déguster à tout moment de la journée.</p>
+                    <button onclick="addToCart()">Ajouter au panier</button>
                 </div>
-                <div class="input">
-                    <input type="text" class="input-field" placeholder="Full address" required />
-                    <label class="input-label">Address</label>
-                </div>
-            </form>
-        </section>
-    </main>
+            </div>
+        </div>
+    </section>
+    
     <footer>
         <section>
             <h3>
                 Navigation
             </h3>
             <div class="navigation">
-                <a href="index.html">Acceuil</a>
+                <a href="index.html">Accueil</a>
                 <a href="histoire.html">Histoire</a>
                 <a href="apropos.html">A propos</a>
                 <a href="Vente.html">Vente</a>
                 <a href="contact.html">Contact</a>
             </div>
-
         </section>
         <section>
             <div class="cadre">
@@ -92,8 +90,6 @@
                 Marseille
             </p>
         </section>
-
     </footer>
 </body>
-
 </html>
