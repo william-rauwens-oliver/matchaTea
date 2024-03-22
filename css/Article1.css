@@ -1,14 +1,10 @@
-.article-content {
+.article {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
 }
 
 .article-image img {
-    margin-top: 100px;
-    margin-left: 300px;
-    margin-bottom: 100px;
     max-width: 300px;
     height: auto;
     border-radius: 10px;
@@ -16,21 +12,9 @@
 }
 
 .article-info {
-    padding-left: 300px;
-    flex: 1;
     margin-left: 20px;
-}
-
-.article-info h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.article-info p {
     font-size: 16px;
     color: #666;
-    margin-bottom: 20px;
 }
 
 .article-info button {
@@ -48,56 +32,11 @@
     background-color: #689f38;
 }
 
-@media only screen and (max-width: 1165px) and (max-height: 932px) {
-    .article-content {
+@media screen and (max-width: 600px) {
+    .article {
         flex-direction: column;
-        align-items: center; /* Centrer horizontalement */
-        justify-content: center; /* Centrer verticalement */
-        height: 100vh; /* Utilisation de toute la hauteur de la fenêtre */
-    }
-
-    .article-image img {
-        margin-left: 0;
-        margin-bottom: 20px; /* Ajustez selon votre besoin */
-    }
-
-    .article-info {
-        padding-left: 0;
-        margin-left: 0;
-        display: flex;
-        flex-direction: column; /* Affichage en colonne */
-        align-items: center; /* Centrer horizontalement */
-        text-align: center; /* Centrer le texte */
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .article-content {
-        flex-direction: column;
-        align-items: center; /* Centrer horizontalement */
-    }
-
-    .article-image img {
-        margin-left: 0;
-        margin-top: 20px; /* Ajustez selon votre besoin */
-        margin-bottom: 20px; /* Ajustez selon votre besoin */
-        max-width: 100%; /* Adapter la largeur de l'image à la taille de l'écran */
-    }
-
-    .article-info {
-        padding-left: 20px; /* Ajustez selon votre besoin */
-        margin-left: 0;
-        text-align: center; /* Centrer le texte */
-        flex: 1;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .article-info h3 {
-        font-size: 20px; /* Réduire la taille du titre */
-    }
-
-    .article-info p {
-        font-size: 14px; /* Réduire la taille du texte */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
